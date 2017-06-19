@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ninh bình</title>
+
+<script src="_lib/jquery1.11.2.js"></script>
+<script src="_lib/angular.js"></script>
+<script src="_lib/ui-routerGood.js"></script>
+<link rel="stylesheet"
+	href="_lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+
+<link rel="stylesheet" href="_lib/font-awesome.css">
+
+<script src="_lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+
+
+<!--  include file -->
+<script src="_lib/_js/module.js"></script>
+<script src="_lib/_js/config.js"></script>
+
+
+
+<link rel="stylesheet" href="_css/cssCollapse.css">
+
+</head>
+<body>
+	<div class="wapper">
+
+		<header>
+			<div class="container">
+
+				<!-- Start hearder -->
+				<div class="row" style="margin-top: 10px;">
+					<div ng-include="'_temp/_header/hearder.html'"></div>
+				</div>
+				<!-- end hearder -->
+			</div>
+		</header>
+
+		<div class="main">
+			<div class=""
+				style="max-height: 300px; overflow: hidden; position: relative;">
+
+				<div class="slogan text-center"
+					style="position: absolute; top: 0px; left: 0px;">Chào mừng
+					bạn tới với Ninh Bình</div>
+				<img src="_img/Forest_by_Moritz_Reisinger.jpg"
+					class="img-responsive img-maxwidth">
+
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div ng-include="'_temp/_body/_tinTucSukien.html'"></div>
+				</div>
+				<div class="row">
+					<div ng-include="'_temp/_body/_keHoachThiKiemTra.html'"></div>
+				</div>
+				<div class="row">
+					<div ng-include="'_temp/_body/_ketQuaThi.html'"></div>
+				</div>
+				<div class="row">
+					<div ng-include="'_temp/_body/_ketHoachCongTac.html'"></div>
+				</div>
+				<div class="row">
+					<div ng-include="'_temp/_body/_capPhatChungChi.html'"></div>
+				</div>
+			</div>
+
+
+			<div>
+				<div ng-include="'_temp/_footer/_beforeFooter.html'"></div>
+			</div>
+
+			<footer>
+
+
+				<div ng-include="'_temp/_footer/_footer.html'"></div>
+
+			</footer>
+		</div>
+
+
+
+	</div>
+</body>
+</html>
